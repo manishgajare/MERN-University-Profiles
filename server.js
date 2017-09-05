@@ -26,7 +26,7 @@ server.get(['/', '/profiles/:profileId'], (req, res) => {
     .catch(console.error);
 });
 
-
+// for adding new profiles
 server.get(['/addNewProfile'], (req, res) => {
   const initialMarkup = serverRenderMethods.serverRenderAddNewProfile();
   res.render('addNewProfile', {
